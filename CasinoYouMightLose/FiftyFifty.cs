@@ -14,19 +14,20 @@ namespace CasinoYouMightLose
         {
 
             int pCash;
-            int cpuCash;
             int bet;
             int guess;
+            int fiftyTotal;
 
 
             int gameFinish;
 
             //calling class GameManager
             GameManager gameManager = new GameManager();
-            
+
+            fiftyTotal = gameManager.balance;
 
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine($"New Initiaded! Your current balance is {gameManager.balance}");
+            Console.WriteLine($"New Initiaded! Your current balance is {fiftyTotal}");
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine("How much do you want to bet?");
 
@@ -113,8 +114,9 @@ namespace CasinoYouMightLose
 
                 Console.WriteLine("YOU WIN!");
 
-                gameManager.balance += bet * 2;
-                Console.WriteLine("YOU LOST! current balance is: " + gameManager.balance);
+                fiftyTotal += bet * 2;
+                Console.WriteLine("Current balance is: " + fiftyTotal
+                    );
                 Console.WriteLine("|      | 1 |          |      | 2 |       |");
                 Console.WriteLine("| Play 50/50 again!   |    Main menu     |");
                 gameFinish = Convert.ToInt32(Console.ReadLine());
@@ -183,8 +185,8 @@ namespace CasinoYouMightLose
 
                 }
 
-                gameManager.balance -= bet;
-                Console.WriteLine("YOU LOST! current balance is: "+ gameManager.balance);
+                fiftyTotal -= bet;
+                Console.WriteLine("YOU LOST! current balance is: "+ fiftyTotal);
                 Console.WriteLine("|      | 1 |          |      | 2 |       |");
                 Console.WriteLine("| Play 50/50 again!   |    Main menu     |");
                 gameFinish = Convert.ToInt32(Console.ReadLine());

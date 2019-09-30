@@ -29,7 +29,7 @@ namespace CasinoYouMightLose
             GameManager gameManager = new GameManager();
 
             Console.WriteLine("----BlackJack game initiated----");
-            Console.WriteLine("Your balance is ");
+            Console.WriteLine("Your balance is: ");
             Console.WriteLine("--------------------------------");
             Console.WriteLine("How much would you like to bet?");
             
