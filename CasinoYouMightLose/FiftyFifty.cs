@@ -24,7 +24,7 @@ namespace CasinoYouMightLose
             //calling class GameManager
             GameManager gameManager = new GameManager();
 
-            fiftyTotal = gameManager.balance;
+            fiftyTotal = 1;
 
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine($"New Initiaded! Your current balance is {fiftyTotal}");

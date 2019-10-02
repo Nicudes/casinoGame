@@ -8,13 +8,28 @@ namespace CasinoYouMightLose
 {
     class GameManager
     {
-        public int balance = 1000;
-        
-        public void gameManager()
-        {
-            balance = 1000;
+
   
-            
+    }
+public sealed class Calculate
+{
+    private Calculate()
+    {
+    }
+    private static Calculate instance = null;
+    public static Calculate Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = new Calculate();
+            }
+            return instance;
         }
     }
-}
+    
+
+    }
+    }
+

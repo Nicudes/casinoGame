@@ -18,11 +18,11 @@ namespace CasinoYouMightLose
    
             Console.Clear();
             Console.WriteLine("                                           Game Menu                                ");
-            Console.WriteLine("             ~~~~~~~~~~~~~~~~~~~~~ Make a choice by pressing: ~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("              |   |1|  |     |2|    |   |3|   |    |4|      |   |5|   |    |6|    |");
-            Console.WriteLine("              |  50/50 |  BlackJack |  Poker  | SlotMachine |   Bank  | Exit Game |");
-            Console.WriteLine("             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Good Luck! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine($"               ~~~~~~~~~~~~~~~~~~~~~~~ Current balance: {gameManager.balance} ~~~~~~~~~~~~~~~~~~~~~~~~ ");
+            Console.WriteLine("                ~~~~~~~~~~~~~~~~~~~~~ Make a choice by pressing: ~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine("                |   |1|  |     |2|    |   |3|   |    |4|      |   |5|     |    |6|    |");
+            Console.WriteLine("                |  50/50 |  BlackJack |  Poker  | SlotMachine |COMING SOON| Exit Game |");
+            Console.WriteLine("                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Good Luck! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine($"                  ~~~~~~~~~~~~~~~~~~~~~~~ Current balance:  ~~~~~~~~~~~~~~~~~~~~~ ");
 
 
 
@@ -38,13 +38,17 @@ namespace CasinoYouMightLose
                     break;
 
                 case "2":
-                    BlackJack g2 = new BlackJack();
+                    BlackJack.BlackJack g2 = new BlackJack.BlackJack();
                     g2.blackJackGame();
                     break;
 
                 case "3":
                     break;
                 case "4":
+                    Console.WriteLine("Feature coming soon!");
+                    
+
+
                     break;
                 case "5":
                     break;
