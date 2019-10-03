@@ -8,12 +8,8 @@ namespace CasinoYouMightLose
 {
     class switchCase
     {
-
-
-        GameManager gameManager = new GameManager();
         public void switches()
         {
-
 
    
             Console.Clear();
@@ -22,7 +18,7 @@ namespace CasinoYouMightLose
             Console.WriteLine("                |   |1|  |     |2|    |   |3|   |    |4|      |   |5|     |    |6|    |");
             Console.WriteLine("                |  50/50 |  BlackJack |  Poker  | SlotMachine |COMING SOON| Exit Game |");
             Console.WriteLine("                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Good Luck! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine($"                  ~~~~~~~~~~~~~~~~~~~~~~~ Current balance:  ~~~~~~~~~~~~~~~~~~~~~ ");
+            Console.WriteLine($"                  ~~~~~~~~~~~~~~~~~~~~~~~ Current balance: {GameManager.Balance} ~~~~~~~~~~~~~~~~~~~~~ ");
 
 
 

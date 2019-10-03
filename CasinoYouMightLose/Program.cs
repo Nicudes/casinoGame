@@ -10,7 +10,7 @@ namespace CasinoYouMightLose
     {
         static void Main(string[] args)
         {
-
+            GameManager.Balance = 50;
             SplashPage splashPage = new SplashPage();
             splashPage.splashPage();
             

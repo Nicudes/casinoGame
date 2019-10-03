@@ -6,30 +6,12 @@ using System.Threading.Tasks;
 
 namespace CasinoYouMightLose
 {
-    class GameManager
+    public static class GameManager
     {
-
+        public static int Balance { get; set; }
   
     }
-public sealed class Calculate
-{
-    private Calculate()
-    {
-    }
-    private static Calculate instance = null;
-    public static Calculate Instance
-    {
-        get
-        {
-            if (instance == null)
-            {
-                instance = new Calculate();
-            }
-            return instance;
-        }
-    }
-    
 
-    }
-    }
+
+}
 

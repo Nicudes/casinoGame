@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BlackJack\BlackJack.cs" />
+    <Compile Include="BlackJack.cs" />
     <Compile Include="FiftyFifty.cs" />
     <Compile Include="GameManager.cs" />
     <Compile Include="Poker.cs" />
