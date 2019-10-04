@@ -19,9 +19,7 @@ namespace CasinoYouMightLose
 
 
             int gameFinish;
-
-            //calling class GameManager
-
+            
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine($"New Initiaded! Your current balance is {GameManager.Balance}");
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -32,9 +30,9 @@ namespace CasinoYouMightLose
             //Random generator
             Random random = new Random();
             int randomNr = random.Next(1, 3);
+            
 
-
-            while (bet < 0)
+            while (bet < 0 || bet > GameManager.Balance)
             {
                 Console.WriteLine("Bet is higher than your balance, please try again");
                 Console.WriteLine("How much do you want to bet?");
@@ -123,11 +121,11 @@ namespace CasinoYouMightLose
                     Black();
 
                 }
-
                 GameManager.Balance -= bet;
                 Console.WriteLine("YOU LOST! current balance is: "+ GameManager.Balance);
                 Console.WriteLine("|      | 1 |          |      | 2 |       |");
                 Console.WriteLine("| Play 50/50 again!   |    Main menu     |");
+
                 gameFinish = Convert.ToInt32(Console.ReadLine());
                 
                 switch (gameFinish)

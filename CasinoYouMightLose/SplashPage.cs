@@ -12,6 +12,7 @@ namespace CasinoYouMightLose
         public void splashPage()
         {
 
+           
 
             Console.WriteLine(" ____________________________________________________________________________________________________________");
             Console.WriteLine(@"|   __          __  _                            _          _   _             _____          _             _ |");
@@ -21,11 +22,11 @@ namespace CasinoYouMightLose
             Console.WriteLine(@"|      \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) | | |_| | | |  __/ | |___| (_| \__ \ | | | | (_) |_||");
             Console.WriteLine(@"|       \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/   \__|_| |_|\___|  \_____\__,_|___/_|_| |_|\___/(_)|");
             Console.WriteLine("|____________________________________________________________________________________________________________|");
-            Console.WriteLine("|________________________________________PRESS ANY KEY TO CONTINUE___________________________________________|");
- 
+            Console.WriteLine("|_______________________________________Enter your name to continue!_________________________________________|");
 
 
-            Console.ReadKey();
+
+            GameManager.Name = Convert.ToString(Console.ReadLine());
 
             switchCase switchCase = new switchCase();
             switchCase.switches();

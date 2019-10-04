@@ -279,6 +279,7 @@ namespace CasinoYouMightLose.BlackJack
                 }
             }
 
+
             //if player loses against dealer hand and dealer hand must be 21 or lower
             if (playerHand < dealerHand && dealerHand <= 21)
             {
@@ -310,6 +311,14 @@ namespace CasinoYouMightLose.BlackJack
                 Console.WriteLine("---------------------------------------");
                 Console.WriteLine("EVEN! Player get money back!");
                 endGame();
+
+            }
+
+            if (GameManager.Balance <= 0)
+            {
+                Console.WriteLine("Out of Balance! Sending you back to the main page!");
+                switchCase s1 = new switchCase();
+                s1.switches();
 
             }
 

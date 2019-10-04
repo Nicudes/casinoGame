@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace CasinoYouMightLose
 {
-    class Poker
+    class VideoPoker
     {
+        public void VideoPokerGame()
+        {
+        
+
+        }
+
+
     }
 }

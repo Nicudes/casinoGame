@@ -13,12 +13,37 @@ namespace CasinoYouMightLose
 
    
             Console.Clear();
-            Console.WriteLine("                                           Game Menu                                ");
+            Console.WriteLine("                                               Game Menu                                ");
             Console.WriteLine("                ~~~~~~~~~~~~~~~~~~~~~ Make a choice by pressing: ~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("                |   |1|  |     |2|    |   |3|   |    |4|      |   |5|     |    |6|    |");
-            Console.WriteLine("                |  50/50 |  BlackJack |  Poker  | SlotMachine |COMING SOON| Exit Game |");
+            Console.WriteLine("                |   |1|  |     |2|    |   |3|    |     |4|     |   |5|     |    |6|    |");
+            Console.WriteLine("                |  50/50 |  BlackJack |VideoPoker| SlotMachine |COMING SOON| Exit Game |");
             Console.WriteLine("                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Good Luck! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine($"                  ~~~~~~~~~~~~~~~~~~~~~~~ Current balance: {GameManager.Balance} ~~~~~~~~~~~~~~~~~~~~~ ");
+            Console.WriteLine($"                  ~~~~~~~~~~~~~~~~~~~~~~~| {GameManager.Name} | Balance: {GameManager.Balance} |~~~~~~~~~~~~~~~~~~~~~ ");
+            if (GameManager.Loan > 0)
+            {
+                Console.WriteLine($"                       ~~~~~~~~~~~~~~~~~~~~~~~~~ {GameManager.Loan} ~~~~~~~~~~~~~~~~~~~");
+
+            }
+            if (GameManager.Balance < 0)
+            {
+                Console.WriteLine("You owe the bank!");
+                
+            }
+
+            if (GameManager.Balance <= 0)
+            {
+                GameManager.endGame();
+
+
+            }
+            if (GameManager.Loan > 0 && GameManager.Balance > 0)
+
+            {
+
+
+            }
+            
+            
 
 
 
