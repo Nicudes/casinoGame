@@ -4,16 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CasinoYouMightLose
+namespace CasinoYouMightLose.VideoPoker
 {
-    class VideoPoker
+    class DealCards
     {
-        public void VideoPokerGame()
-        {
-        
-
-        }
-
-
     }
 }
