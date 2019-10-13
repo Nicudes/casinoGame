@@ -19,16 +19,7 @@ namespace CasinoYouMightLose
             Console.WriteLine("                |  50/50 |  BlackJack |VideoPoker| SlotMachine |COMING SOON| Exit Game |");
             Console.WriteLine("                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Good Luck! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine($"                  ~~~~~~~~~~~~~~~~~~~~~~~| {GameManager.Name} | Balance: {GameManager.Balance} |~~~~~~~~~~~~~~~~~~~~~ ");
-            if (GameManager.Loan > 0)
-            {
-                Console.WriteLine($"                       ~~~~~~~~~~~~~~~~~~~~~~~~~ {GameManager.Loan} ~~~~~~~~~~~~~~~~~~~");
-
-            }
-            if (GameManager.Balance < 0)
-            {
-                Console.WriteLine("You owe the bank!");
-                
-            }
+     
 
             if (GameManager.Balance <= 0)
             {
@@ -64,6 +55,8 @@ namespace CasinoYouMightLose
                     break;
 
                 case "3":
+                    VideoPoker.VideoPoker v1 = new VideoPoker.VideoPoker();
+                    v1.PokerGame();
                     break;
                 case "4":
                     Console.WriteLine("Feature coming soon!");

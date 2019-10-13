@@ -101,6 +101,8 @@ namespace CasinoYouMightLose.BlackJack
                     Console.WriteLine("You draw a new card: ");
                     Console.WriteLine($"[{card3}]");
                     Console.WriteLine("Your total value is: " + playerHand);
+                    Console.WriteLine();
+                    Console.WriteLine("Press 1 to hit again | Press 2 to hold ");
 
                     if (playerHand > 21)
                     {
@@ -129,6 +131,8 @@ namespace CasinoYouMightLose.BlackJack
                     Console.WriteLine("You draw a new card: ");
                     Console.WriteLine($"[{card4}]");
                     Console.WriteLine("Your total value is: " + playerHand);
+                    Console.WriteLine();
+                    Console.WriteLine("Press 1 to hit again | Press 2 to hold ");
 
                     if (playerHand > 21)
                     {
@@ -159,6 +163,8 @@ namespace CasinoYouMightLose.BlackJack
                     Console.WriteLine("You draw a new card: ");
                     Console.WriteLine($"[{card5}]");
                     Console.WriteLine("Your total value is: " + playerHand);
+                    Console.WriteLine();
+                    Console.WriteLine("Press 1 to hit again | Press 2 to hold ");
 
                     if (playerHand > 21)
                     {
@@ -191,6 +197,8 @@ namespace CasinoYouMightLose.BlackJack
                     Console.WriteLine("You draw a new card: ");
                     Console.WriteLine($"[{card6}]");
                     Console.WriteLine("Your total value is: " + playerHand);
+                    Console.WriteLine();
+                    Console.WriteLine("Press 1 to hit again | Press 2 to hold ");
 
                     if (playerHand > 21)
                     {
@@ -326,7 +334,7 @@ namespace CasinoYouMightLose.BlackJack
 
         private static int IncorrectBet(int bet)
         {
-            if (bet > GameManager.Balance || bet <= 0)
+            while (bet > GameManager.Balance || bet <= 0)
             {
                 Console.WriteLine("Invalid input please try again!");
                 Console.WriteLine("***************************************");
@@ -350,10 +358,10 @@ namespace CasinoYouMightLose.BlackJack
             int gameFinish;
 
             Console.WriteLine("\n");
-            Console.WriteLine("------------------------------------------");
-            Console.WriteLine("|      | 1 |          |      | 2 |       |");
-            Console.WriteLine("| Play 50/50 again!   |    Main menu     |");
-            Console.WriteLine("------------------------------------------");
+            Console.WriteLine("----------------------------------------------");
+            Console.WriteLine("|           | 1 |         |      | 2 |       |");
+            Console.WriteLine("| Play BlackJack again!   |    Main menu     |");
+            Console.WriteLine("----------------------------------------------");
             gameFinish = Convert.ToInt32(Console.ReadLine());
 
             switch (gameFinish)

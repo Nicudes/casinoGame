@@ -15,13 +15,11 @@ namespace CasinoYouMightLose
 
         public static void endGame()
         {
-            
-            Console.WriteLine("\n");
+
+            Console.WriteLine("Game OVER!");
             Console.WriteLine("Out of balance! ");
-            
-            switchCase s1 = new switchCase();
-            s1.switches();
-            
+            Console.ReadKey();
+            Environment.Exit(0);
 
         }
 

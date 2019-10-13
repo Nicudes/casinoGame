@@ -12,7 +12,6 @@ namespace CasinoYouMightLose
         public void splashPage()
         {
 
-           
 
             Console.WriteLine(" ____________________________________________________________________________________________________________");
             Console.WriteLine(@"|   __          __  _                            _          _   _             _____          _             _ |");

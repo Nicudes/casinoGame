@@ -8,5 +8,7 @@ namespace CasinoYouMightLose.VideoPoker
 {
     class DealCards
     {
+        Random r = new Random();
+    
     }
 }
